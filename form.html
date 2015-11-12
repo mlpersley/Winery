@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/master.min.css">
+  <title>Event Form</title>
+</head>
+<body>
+<div id='wrapper'>
+  	<div class='headCon'>
+		<div id='imgHead'>
+				<img src='img/winepourst.png' alt='Wine Pouring'>
+		</div>
+		<div id='logoCon'>
+			<img src='img/logo.png' alt='Winery Logo'>
+		</div>
+		<div id='navCon'>       
+			<ul class="mainNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="wine.html">Wine</a></li>
+        <li><a href="history.html">History</a></li>
+      </ul>
+    </div> 
+	</div> <!--header container ends-->
+  <div id='headSize'>
+    <h1>Event List Request</h1>
+   </div>
+      <form method="post"
+        action="http://webdevbasics.net/scripts/demo.php"
+          onsubmit="return validateForm();">
+          <fieldset>
+            <legend>Join Our Event List</legend>
+              <p class='p1'>
+                <label for="userName">First <U>N</U>ame:&nbsp; &nbsp;</label>
+                <input type="text"  pattern="^[A-Za-z]+$" placeholder="Alpha Only" name="userName" id="userName" tabindex="1" accesskey="N" required>
+              </p>
+              <p class='p1'>
+                <label for="userName">Last <U>N</U>ame:&nbsp; &nbsp;</label>
+                <input type="text" pattern="^[A-Za-z]+$" placeholder="Alpha Only" name="userLast" id="userLast" tabindex="1" accesskey="N" required>
+              </p>
+              <p>
+                <label for="userEmail"><U>E</U>mail:&nbsp; &nbsp;</label> 
+                <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="noOne@example.com" name="userEmail" id="userEmail" tabindex="3" accesskey="E" required>
+              </p>
+              <p>
+                <label for="userPhone"><U>P</U>hone Number: (format: XXX-XXX-XXXX) &nbsp; &nbsp;</label> 
+                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="XXX-XXX-XXXX" name="userPhone" id="userPhone" tabindex="4" accesskey="P">
+              </p>
+          </fieldset>
+       <input type="submit" value="Submit Form!" tabindex="14"> <input type="reset" tabindex="15">
+      </form>
+      
+    <div class='spaceCon'></div>
+  		<div id='footCon'>
+        <footer id='footPage'>
+          <p>River City Winery &copy; 2015</p>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="wine.html">Wine</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="form.html">Form</a></li>
+              </ul>
+            </nav>
+        </footer>
+ 			</div>
+  </div><!--wrapper ends-->
+</body>
+</html>
